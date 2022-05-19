@@ -8,18 +8,18 @@ In the analysis, PySpark is used to perform the ETL process to extract the datas
 
 ### The vine dataset
 
-After reading the review dataset as a dataframe, a vine_df dataframe was created to hold relevant information. This vine_df dataframe was then further transformed to understand the data. The step by step transformation can be found in the Vine_Review_Analysis.ipynb file.
+After reading the review dataset as a dataframe, a vine_df dataframe was created to hold the most relevant information from the original dataset. This vine_df dataframe was then further transformed to understand the data. The step by step transformation can be found in the Vine_Review_Analysis.ipynb file.
 
 <img src="Images/vine_df.png">
 
-The main part of the transformation consisted in filtering for reviews that would be more likely to be helpful. Namely, reviews where:
+The main part of the transformation of the vine_df consisted on filtering for reviews that would be more likely to be helpful. Namely, reviews where:
 
 - total_votes are greater than or equal to 20
 - the helpful_votes/total_votes ratio is equal or greater than 50%
 
 ### Results
 
-The results of this analysis are shown in the following image.
+The results of the analysis are shown in the following image.
 
 <img src="Images/paid_unpaid_results.png">
 
